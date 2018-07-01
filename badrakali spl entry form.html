@@ -1,0 +1,183 @@
+<!__ HTML Document on forms __>
+<!doctype html>
+<html lang="en-US">
+	<head>
+			<title> LOGIN - BADRAKALI DEVASTHANAM </title>
+			<meta charset="utf-8">
+			<link src="125.png" rel="icon" type="png/ico">
+
+			<style>
+			
+					table {
+    border-collapse: collapse;
+    border: NULL;
+    width: 50%;
+}
+td {
+    width: 10%;
+    height: 2em;
+    border: null;
+}
+div.title {
+    height: 50px;
+    width: 100%;
+    background-color: #b2beb5;
+	  font-family: "Times New Roman", Times, serif;
+	  font-size: 40px;
+}
+div.title1 {
+    height: 30px;
+    width: 100%;
+    background-color:     #DA7B91   ;
+	  font-family: "Times New Roman", Times, serif;
+	  font-size: 30px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: "Times New Roman", Times, serif;
+	font-style: bold;
+	 font-size: 20px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 46px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+.mySlides{
+ height: 500px;
+    width: 100%;
+    
+	}
+	div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 280px;
+	 margin-top:20px; 
+	 margin-right:20px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding:  54px 46px;
+    text-align: center ;
+	 background-color: #F4F6F6;
+	
+}
+div.border{
+width:300px;
+height:100%;
+align:left;
+}
+
+			
+			
+			</style>
+
+			</head>
+	
+	<body style="text-align:center">	
+	
+				<marquee behaviour="slide" scrollamount="6"> <FONT SIZE="5" COLOR="BLUE"><h2> BADRAKALI DEVASTHANAM - WARANGAL </h2> </FONT></marquee>
+				
+				
+<ul>
+  <li><a class="active" href="#home">H0ME</a></li>
+  <li><a href="#news">HISTORIC</a></li>
+  <li><a href="#contact">CULTURE</a></li>
+ <!--<li><a href="#Desination">DESINATION</a></li> -->
+  <li><a href="#videous">VIDEOS</a></li>
+  <li><a href="#contact">CONTACT</a></li>
+  <li><a href="#about">ABOUT-US</a></li>
+</ul>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="badrakali.jpg"
+  style="width:100%; height=300px">
+  <img class="mySlides" src="badrakali.jpg"
+  style="width:100% ; height=300px">
+  
+  <img class="mySlides" src="badrakali.jpg" 
+ style="width:100%; height=300px">
+ </section>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+
+
+<BR/>
+
+<marquee behavior="SCROLL" LOOP="1000" SCROLLAMOUNT="5" > <FONT COLOR="RED" SIZE="4" FACE="Algerian"><b>BADRAKALI DEVASTHANAM - WARANGAL</b> </marquee>
+
+<br> <br>
+
+<div align="center" style="background-color:#ff3333"><font size="5" color="black" face="times new roman"> <b> <i> BADRAKALI DEVASTHANAM - WARANGAL SPECIAL TICKET BOOKING FORM </i> </b></font> </div>
+<br/>
+				<form action="PR2.HTML" target="new" method="post">
+				
+				
+				
+				
+					<table ALIGN=CENTER>
+    <tbody>
+        <tr><td><label> First Name </label></td><td><input type="text" name="fname" id="uname" placeholder="First Name Here" size="35"></td></tr>
+        <tr><td><label> Last Name </label></td><td><input type="text" name="sname" id="sname" placeholder="Second Name Here" size="35"></td></tr>
+        <tr><td><label> Username </label></td><td><input type="text" name="username" id="uname" placeholder="Choose your Username" size="35"></td></tr>
+		<tr><td><label> Password </label>  </td><td><input type="password" name="password" id="pswd" placeholder="Password" size="35"></td></tr>
+		<tr><td><label> Retype Password </label></td><td><input type="password" name="cpassword" id="cpswd" placeholder="Retype Password" size="35"></td></tr>
+		<tr><td><label> Mail Id </label></td><td><input type="mail" name="mail" id="mail" placeholder="Type Mail Id" size="45"></td></tr>
+    </tbody>
+</table>
+<input type='submit' id='submit' value='OK'/> &nbsp; &nbsp; &nbsp; <input type='RESET' id='CANCEL' value='CANCEL'/>
+				
+					 
+					
+				</form>
+	
+	
+	
+	
+	</body>
+
+
+
+</html>
